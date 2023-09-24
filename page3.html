@@ -40,13 +40,20 @@
             <legend>Contact Form</legend>
             <label>Enter your full name</label><br>
             <input type="text" name="full_name"><br>
-            <label>Enter your email</label><br>
-            <input type="email" name="email"><br>
-            <label>Enter your phone</label><br>
-            <input type="text" name="phone"><br>
-            <br><label>How should we contact you?</label><br>
-            <input type="radio" name="contact_method" value="email">Email<br>
-            <input type="radio" name="contact_method" value="phone">Phone<br>
+            <label>How should we contact you?</label><br>
+            <input type="radio" id="contactByEmail" name="contact_method" value="email">Email<br>
+            <input type="radio" id="contactByPhone" name="contact_method" value="phone">Phone<br>
+
+            <div id="emailSection" style="display: none;">
+                <label>Enter your email</label><br>
+                <input type="email" name="email"><br>
+            </div>
+
+            <div id="phoneSection" style="display: none;">
+                <label>Enter your phone</label><br>
+                <input type="text" name="phone"><br>
+            </div>
+
             <br><label>What pet are you interested in?</label><br>
             <select name="inquiring">
                 <option>Dogs</option>
@@ -72,5 +79,6 @@
     </footer>
 </div>
 <!-- End Container -->
+<script src="contactform.js"></script>
 </body>
 </html>
